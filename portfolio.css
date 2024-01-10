@@ -1,0 +1,251 @@
+
+body {
+  background-color: #03001c;
+  color: rgb(255, 255, 255);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: larger;
+}
+
+p{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+header {
+  text-align: right;
+  padding: 20px;
+}
+
+.navbar {
+  
+  overflow: hidden;
+  background-color: #141137;
+}
+
+/* Hamburger icon style */
+.navbar .icon {
+  display: none; /* Initially hidden on larger screens */
+}
+
+@media screen and (max-width: 768px) {
+  .navbar a {
+    display: block; /* Show nav links as block elements */
+    text-align: center; /* Center-align the links */
+    padding: 10px;
+  }
+
+  /* Hide nav links by default on small screens */
+  .navbar-links {
+    display: none;
+  }
+
+  /* Show hamburger icon on small screens */
+  .navbar .icon {
+    display: block;
+    float: right;
+    padding: 14px 20px;
+    cursor: pointer;
+  }
+}
+
+/* Increase the size of social media icons */
+.icon i {
+  font-size: 50px;
+  margin: 10px;
+}
+
+.navbar a {
+  float: right;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: x-large;
+}
+
+.navbar a:hover {
+  color: orangered;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  font-size: x-large;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(233, 245, 255);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 15%;
+}
+
+.dropdown-content a {
+  float: none;
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#content {
+  text-align: center;
+  padding: 20px;
+}
+
+#objectives {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+#animated-background {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.section {
+  display: none;
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 10%;
+}
+
+.section.active {
+  display: block;
+}
+
+.surname{
+  font-size: 50px;
+  color: rgb(180, 164, 164);
+  font-style: oblique;
+}
+
+#home{
+  text-align: center;
+  margin-top: 10%;
+}
+
+.letter-animation {
+  display: inline-block;
+  opacity: 0;
+  animation: animate-letters 4s infinite;
+}
+
+@keyframes animate-letters {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  25% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  75% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(5px);
+  }
+}
+
+  .con {
+  background-color: rgb(210, 210, 234);
+  width: 500px;
+  height: auto;
+  border-radius: 5px;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  color: black;
+  
+}
+
+form input{
+    width: 70%;
+    height: 28px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom-color: rgb(46, 222, 140);
+    background-color: rgb(214, 233, 250);
+    margin-top: 10px;
+}
+
+form textarea{
+    width: 70%;
+     height: 120px;
+     background-color: rgb(214, 233, 250);
+     margin-top: 10px;
+}
+
+  img{
+    border-radius: 2%;
+    width:400px;
+    height: 250px;
+    align-items: start;
+    align-content: flex-start;
+  }
+
+/* Display buttons inline */
+.wrapper {
+  display: inline-block;
+}
+
+/* Display buttons inline */
+.button {
+  display: inline-block;
+  margin-right: 20px; /* Adjust margin as needed */
+  position: relative;
+  width: 10px;
+  height: 15px;
+}
+
+/* Initially hide the social text */
+.social-text {
+  visibility: hidden;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -20px; /* Adjust this value to fit your design */
+  color: #0800f3;
+  padding: 5px 10px;
+  border-radius: 5px;
+  pointer-events: none; /* Ensures text doesn't interfere with hover */
+  transition: visibility 0s, opacity 0.3s linear;
+  opacity: 0;
+}
+
+/* Show social text on hover */
+.button:hover .social-text {
+  visibility: visible;
+  opacity: 1;
+}
