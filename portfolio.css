@@ -48,6 +48,13 @@ header {
     padding: 14px 20px;
     cursor: pointer;
   }
+
+img {
+  max-width: 100%; /* Make the image responsive */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Center the image */
+    }
 }
 
 /* Increase the size of social media icons */
