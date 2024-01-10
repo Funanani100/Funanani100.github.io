@@ -1,11 +1,11 @@
-
+@media screen and (max-width: 768px) {
 body {
   background-color: #03001c;
   color: rgb(255, 255, 255);
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  font-size: larger;
+  font-size: smaller;
 }
 
 header {
@@ -14,7 +14,7 @@ header {
 }
 
 .navbar {
-  
+  padding: 10px;
   overflow: hidden;
   background-color: #141137;
 }
@@ -23,7 +23,7 @@ header {
   float: right;
   color: #ffffff;
   text-align: center;
-  padding: 14px 20px;
+  padding: 8px 12px;
   text-decoration: none;
   font-size: x-large;
 }
@@ -154,11 +154,11 @@ header {
 
   img{
   border-radius: 2%;
-  width:400px;
-  height: 250px;
-  align-items: start;
-  align-content: flex-start;
-  }
+  max-width: 100%; /* Make the image responsive */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 
 /* Display buttons inline */
 .wrapper {
@@ -187,6 +187,8 @@ header {
   pointer-events: none; /* Ensures text doesn't interfere with hover */
   transition: visibility 0s, opacity 0.3s linear;
   opacity: 0;
+}
+
 }
 
 /* Show social text on hover */
