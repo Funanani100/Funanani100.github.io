@@ -29,7 +29,7 @@ header {
   display: none; /* Initially hidden on larger screens */
 }
 
-@media (max-width:720px) {
+@media (max-width:650px) {
   /* Hamburger icon style */
   .navbar .icon {
     display: block;
@@ -39,7 +39,7 @@ header {
     text-align: right;
   }
   .navbar {
-    width: 300px;
+    width: 500px;
   }
 
 
