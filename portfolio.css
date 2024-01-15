@@ -39,8 +39,14 @@ header {
     text-align: right;
   }
   .navbar {
-    width: 780px;
+    width: 650px;
   }
+
+  body {
+   align-content: centre;
+  font-size: large;
+}
+
 
 
   /* Adjust the content width */
