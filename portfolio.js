@@ -158,7 +158,7 @@ const navbar = document.querySelector('.navbar');
         navbar.classList.remove('fixed-nav');
       }
     };
-
+/*
 // JavaScript to toggle the navigation menu
 function toggleMenu() {
   var navbarLinks = document.getElementById("navbarLinks");
@@ -171,6 +171,7 @@ function toggleMenu() {
     });
   });
 }
+*/
  
 
 
